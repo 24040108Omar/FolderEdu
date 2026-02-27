@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unidad 2</title>
+  <link rel="stylesheet" href="../css/unidad2.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#top">
+        <div class="brand__text">
+          <div class="brand__title">Portafolio de Evidencias</div>
+          <div class="brand__meta">Diego Omar Batres Camacho / Erick Everardo Garza Rodríguez</div>
+          <div class="brand__meta">5 DSM B – Desarrollo Web Orientado a Servicios</div>
+        </div>
+      </a>
+  
+      <div class="nav__links">
+        <a class="nav__link" href="../index.html">Inicio</a>
+        <a class="nav__btn" href="../contacto.html">Contacto</a>
+      </div>
+  
+    </nav>
+  </header>
+
+<main class="page-transition container">
+
+  <h2 class="fade-up">
+    Contenido de la segunda unidad
+    <span class="unit-badge">Unidad 2</span>
+  </h2>
+
+  <p class="fade-up">
+    Implementación de Interfaz de Programación de Aplicaciones (API).
+  </p>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- ACORDEÓN 1 - TIPOS DE SERVICIOS WEB -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="accordion-card fade-up">
+    <button class="accordion-btn">
+      1. saber
+      <span class="icon">+</span>
+    </button>
+
+    <div class="accordion-content">
+      <p>Tipos de Servicios Web:<br>
+        • Geolocalización<br>
+        • Redes Sociales<br>
+        • Bases de Datos<br>
+        • Plataformas On-Line<br>
+        • Plataformas Streaming
+      </p>
+
+      <a href="#" class="btn-evidencias" id="btnModalTema1">Ver evidencias</a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- MODAL TEMA 1 - TIPOS DE SERVICIOS WEB (DISEÑO INFOGRÁFICO) -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="modal" id="modalTema1">
+    <div class="modal-contenido">
+      <span class="btn-cerrar" id="cerrarModalTema1">&times;</span>
+      <h2>💡 Tipos de Servicios Web - Tecnologías Modernas</h2>
+
+      <!-- ═══════════════════════════════════════════════════════════ -->
+      <!-- 🌍 GEOLOCALIZACIÓN -->
+      <!-- ═══════════════════════════════════════════════════════════ -->
+      <div class="modal-tema">
+        <div class="tema-header">
+          <div class="icono-grande">🌍</div>
+          <div>
+            <h3>Geolocalización</h3>
+            <p class="tema-subtitle">es una tecnología que permite identificar la ubicación geográfica exacta o aproximada de un usuario, dispositivo o sistema mediante el uso de GPS, redes móviles, direcciones IP o conexiones Wi-Fi. Es ampliamente utilizada en aplicaciones web y móviles para ofrecer servicios personalizados basados en la ubicación.</p>
+          </div>
+        </div>
+
+        <!-- Definición Principal -->
+        <div class="definicion-principal">
+          <div class="definicion-contenido">
+            <h4>¿Qué es?</h4>
+            <p>La geolocalización es una tecnología que permite identificar la ubicación geográfica de un usuario o dispositivo en tiempo real.</p>
+          </div>
+          <div class="definicion-imagen">
+            <!-- ⭐ ESPACIO PARA TU IMAGEN/GIF ⭐ -->
+            <div class="imagen-container">
+              <div class="imagen-placeholder-new">
+              <img src="../image/gif/geo.gif" alt="Geolocalización" class="imagen-modal">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid de Características -->
+        <div class="caracteristicas-grid">
+          <div class="caracteristica-item">
+            <span class="car-icono">📡</span>
+            <h5>Tecnología GPS</h5>
+            <p>Utiliza GPS, redes Wi-Fi o datos móviles</p>
+          </div>
+          <div class="caracteristica-item">
+            <span class="car-icono">🗺️</span>
+            <h5>Mapas Interactivos</h5>
+            <p>Permite mostrar mapas interactivos y rutas</p>
+          </div>
+          <div class="caracteristica-item">
+            <span class="car-icono">🏪</span>
+            <h5>Búsqueda Local</h5>
+            <p>Ubica negocios cercanos o servicios</p>
+          </div>
+          <div class="caracteristica-item">
+            <span class="car-icono">✨</span>
+            <h5>Personalización</h5>
+            <p>Mejora experiencia con contenido según ubicación</p>
+          </div>
+        </div>
+
+        <!-- Ejemplos Destacados -->
+        <div class="ejemplos-destacados">
+          <h4>📱 Aplicaciones Populares</h4>
+          <div class="ejemplos-tags">
+            <span class="tag-ejemplo">Google Maps</span>
+            <span class="tag-ejemplo">Uber</span>
+            <span class="tag-ejemplo">Rappi</span>
+            <span class="tag-ejemplo">iFood</span>
+            <span class="tag-ejemplo">Find My iPhone</span>
+            <span class="tag-ejemplo">Waze</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════════════════ -->
+      <!-- 📱 REDES SOCIALES -->
+      <!-- ═══════════════════════════════════════════════════════════ -->
+      <div class="modal-tema">
+        <div class="tema-header tema-social">
+          <div class="icono-grande">📱</div>
+          <div>
+            <h3>Redes Sociales</h3>
+            <p class="tema-subtitle">Las redes sociales son plataformas digitales diseñadas para la interacción social, donde los usuarios pueden crear perfiles, compartir contenido y comunicarse con otras personas o comunidades. Han transformado la forma en que se comparte información y se construyen relaciones a nivel global.</p>
+          </div>
+        </div>
+
+        <!-- Definición Principal -->
+        <div class="definicion-principal">
+          <div class="definicion-contenido">
+            <h4>¿Qué son?</h4>
+            <p>Las redes sociales son plataformas digitales que permiten la comunicación, interacción y el intercambio de contenido entre usuarios.</p>
+          </div>
+          <div class="definicion-imagen">
+            <!-- ⭐ ESPACIO PARA TU IMAGEN/GIF ⭐ -->
+            <div class="imagen-container">
+
+              <div class="imagen-placeholder-new">
+                <span class="icono-placeholder"></span>
+                <img src="../image/gif/redes.gif" alt="Redes Sociales" class="imagen-modal">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid de Características -->
+        <div class="caracteristicas-grid">
+          <div class="caracteristica-item item-social">
+            <span class="car-icono">📝</span>
+            <h5>Contenido Multimedia</h5>
+            <p>Comparte texto, imágenes, videos y enlaces</p>
+          </div>
+          <div class="caracteristica-item item-social">
+            <span class="car-icono">⚡</span>
+            <h5>Tiempo Real</h5>
+            <p>Facilitan comunicación instantánea</p>
+          </div>
+          <div class="caracteristica-item item-social">
+            <span class="car-icono">📊</span>
+            <h5>Marketing Digital</h5>
+            <p>Usadas para publicidad y promoción</p>
+          </div>
+          <div class="caracteristica-item item-social">
+            <span class="car-icono">👥</span>
+            <h5>Comunidades</h5>
+            <p>Crean comunidades y difunden información</p>
+          </div>
+        </div>
+
+        <!-- Ejemplos Destacados -->
+        <div class="ejemplos-destacados">
+          <h4>🌟 Plataformas Principales</h4>
+          <div class="ejemplos-tags">
+            <span class="tag-ejemplo tag-social">Facebook</span>
+            <span class="tag-ejemplo tag-social">Instagram</span>
+            <span class="tag-ejemplo tag-social">X (Twitter)</span>
+            <span class="tag-ejemplo tag-social">TikTok</span>
+            <span class="tag-ejemplo tag-social">LinkedIn</span>
+            <span class="tag-ejemplo tag-social">YouTube</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════════════════ -->
+      <!-- 🗄️ BASES DE DATOS -->
+      <!-- ═══════════════════════════════════════════════════════════ -->
+      <div class="modal-tema">
+        <div class="tema-header tema-db">
+          <div class="icono-grande">🗄️</div>
+          <div>
+            <h3>Bases de Datos</h3>
+            <p class="tema-subtitle">Las bases de datos son sistemas estructurados que permiten almacenar, organizar y administrar grandes volúmenes de información de manera eficiente, segura y ordenada. Son fundamentales en el desarrollo de aplicaciones web, sistemas administrativos y plataformas digitales.</p>
+          </div>
+        </div>
+
+        <!-- Definición Principal -->
+        <div class="definicion-principal">
+          <div class="definicion-contenido">
+            <h4>¿Qué son?</h4>
+            <p>Las bases de datos son sistemas que permiten almacenar, organizar y gestionar grandes cantidades de información de forma segura y eficiente.</p>
+          </div>
+          <div class="definicion-imagen">
+            <!-- ⭐ ESPACIO PARA TU IMAGEN/GIF ⭐ -->
+            <div class="imagen-container">
+              
+              <div class="imagen-placeholder-new">
+                <span class="icono-placeholder"></span>
+                <img src="../image/gif/sql.gif" alt="Bases de Datos" class="imagen-modal">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid de Características -->
+        <div class="caracteristicas-grid">
+          <div class="caracteristica-item item-db">
+            <span class="car-icono">💼</span>
+            <h5>Almacenamiento</h5>
+            <p>Guardan info de usuarios, productos o transacciones</p>
+          </div>
+          <div class="caracteristica-item item-db">
+            <span class="car-icono">🔍</span>
+            <h5>Búsquedas Rápidas</h5>
+            <p>Permiten búsquedas rápidas y precisas</p>
+          </div>
+          <div class="caracteristica-item item-db">
+            <span class="car-icono">🔒</span>
+            <h5>Seguridad</h5>
+            <p>Aseguran integridad y seguridad de datos</p>
+          </div>
+          <div class="caracteristica-item item-db">
+            <span class="car-icono">🏢</span>
+            <h5>Aplicaciones Web</h5>
+            <p>Esenciales para apps web y sistemas empresariales</p>
+          </div>
+        </div>
+
+        <!-- Ejemplos Destacados -->
+        <div class="ejemplos-destacados">
+          <h4>💻 Tecnologías Populares</h4>
+          <div class="ejemplos-tags">
+            <span class="tag-ejemplo tag-db">MySQL</span>
+            <span class="tag-ejemplo tag-db">PostgreSQL</span>
+            <span class="tag-ejemplo tag-db">SQL Server</span>
+            <span class="tag-ejemplo tag-db">MongoDB</span>
+            <span class="tag-ejemplo tag-db">Firebase</span>
+            <span class="tag-ejemplo tag-db">Oracle</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════════════════ -->
+      <!-- 🌐 PLATAFORMAS ON-LINE -->
+      <!-- ═══════════════════════════════════════════════════════════ -->
+      <div class="modal-tema">
+        <div class="tema-header tema-online">
+          <div class="icono-grande">🌐</div>
+          <div>
+            <h3>Plataformas On-Line</h3>
+            <p class="tema-subtitle">Las plataformas on-line son entornos digitales accesibles a través de internet que permiten a los usuarios realizar actividades como aprendizaje, trabajo colaborativo, gestión de información o servicios digitales, sin necesidad de instalaciones locales.</p>
+          </div>
+        </div>
+
+        <!-- Definición Principal -->
+        <div class="definicion-principal">
+          <div class="definicion-contenido">
+            <h4>¿Qué son?</h4>
+            <p>Las plataformas on-line son servicios accesibles a través de internet que permiten realizar diversas actividades sin necesidad de instalación local.</p>
+          </div>
+          <div class="definicion-imagen">
+            <!-- ⭐ ESPACIO PARA TU IMAGEN/GIF ⭐ -->
+            <div class="imagen-container">
+              
+              <div class="imagen-placeholder-new">
+                <span class="icono-placeholder"></span>
+                <img src="../image/gif/online.gif" alt="Plataformas Online" class="imagen-modal">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid de Características -->
+        <div class="caracteristicas-grid">
+          <div class="caracteristica-item item-online">
+            <span class="car-icono">🌍</span>
+            <h5>Acceso Web</h5>
+            <p>Funcionan desde cualquier navegador web</p>
+          </div>
+          <div class="caracteristica-item item-online">
+            <span class="car-icono">👨‍💼</span>
+            <h5>Colaboración</h5>
+            <p>Facilitan el trabajo colaborativo</p>
+          </div>
+          <div class="caracteristica-item item-online">
+            <span class="car-icono">🔄</span>
+            <h5>Tiempo Real</h5>
+            <p>Acceso a información actualizada al instante</p>
+          </div>
+          <div class="caracteristica-item item-online">
+            <span class="car-icono">💰</span>
+            <h5>Costos Reducidos</h5>
+            <p>Reducen costos de infraestructura</p>
+          </div>
+        </div>
+
+        <!-- Ejemplos Destacados -->
+        <div class="ejemplos-destacados">
+          <h4>⚙️ Herramientas Populares</h4>
+          <div class="ejemplos-tags">
+            <span class="tag-ejemplo tag-online">Google Drive</span>
+            <span class="tag-ejemplo tag-online">Moodle</span>
+            <span class="tag-ejemplo tag-online">Canva</span>
+            <span class="tag-ejemplo tag-online">Figma</span>
+            <span class="tag-ejemplo tag-online">Notion</span>
+            <span class="tag-ejemplo tag-online">Trello</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════════════════ -->
+      <!-- 🎬 PLATAFORMAS STREAMING -->
+      <!-- ═══════════════════════════════════════════════════════════ -->
+      <div class="modal-tema">
+        <div class="tema-header tema-streaming">
+          <div class="icono-grande">🎬</div>
+          <div>
+            <h3>Plataformas Streaming</h3>
+            <p class="tema-subtitle">Las plataformas de streaming son servicios digitales que permiten la transmisión continua de contenido multimedia como video, música o transmisiones en vivo a través de internet, sin necesidad de descargar los archivos en el dispositivo.</p>
+          </div>
+        </div>
+
+        <!-- Definición Principal -->
+        <div class="definicion-principal">
+          <div class="definicion-contenido">
+            <h4>¿Qué son?</h4>
+            <p>Las plataformas de streaming permiten reproducir contenido multimedia en línea sin necesidad de descargarlo.</p>
+          </div>
+          <div class="definicion-imagen">
+            <!-- ⭐ ESPACIO PARA TU IMAGEN/GIF ⭐ -->
+            <div class="imagen-container">
+              
+              <div class="imagen-placeholder-new">
+                <span class="icono-placeholder"></span>
+                <img src="../image/gif/flander.gif" alt="Streaming" class="imagen-modal">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid de Características -->
+        <div class="caracteristicas-grid">
+          <div class="caracteristica-item item-streaming">
+            <span class="car-icono">▶️</span>
+            <h5>Inmediatez</h5>
+            <p>Reproducción inmediata de audio y video</p>
+          </div>
+          <div class="caracteristica-item item-streaming">
+            <span class="car-icono">📚</span>
+            <h5>Bajo Demanda</h5>
+            <p>Contenido disponible cuando lo necesites</p>
+          </div>
+          <div class="caracteristica-item item-streaming">
+            <span class="car-icono">📱</span>
+            <h5>Multi-dispositivo</h5>
+            <p>Acceso desde múltiples dispositivos</p>
+          </div>
+          <div class="caracteristica-item item-streaming">
+            <span class="car-icono">🎯</span>
+            <h5>Personalización</h5>
+            <p>Adaptado según gustos del usuario</p>
+          </div>
+        </div>
+
+        <!-- Ejemplos Destacados -->
+        <div class="ejemplos-destacados">
+          <h4>🎥 Servicios Populares</h4>
+          <div class="ejemplos-tags">
+            <span class="tag-ejemplo tag-streaming">Netflix</span>
+            <span class="tag-ejemplo tag-streaming">YouTube</span>
+            <span class="tag-ejemplo tag-streaming">Spotify</span>
+            <span class="tag-ejemplo tag-streaming">Amazon Prime</span>
+            <span class="tag-ejemplo tag-streaming">Disney+</span>
+            <span class="tag-ejemplo tag-streaming">Twitch</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- ACORDEONES ADICIONALES (COMENTADOS - LISTOS PARA USAR) -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+    <div class="accordion-card fade-up">
+    <button class="accordion-btn">
+      2. saber hacer #1
+      <span class="icon">+</span>
+    </button>
+
+    <div class="accordion-content">
+      <p>Diseñe un sitio que muestre una determinada localización en un mapa(cumplir con los siguientes puntos) <br>
+      La pagina de inicio  deberá de mostrar las siguientes opciones <br>
+      - ¿Qué es geolocalización? <br>
+      - son los tipos de geolocalización mas utilizados? <br>
+      - 5 aplicaciones que utilicen geolocalización <br>
+      - es una API? <br>
+      - se genera una clave API? <br>
+      - los diferentes tipos de Ubicación (Temas vistos en clase) <br>
+        
+      </p>
+
+      <a href="https://24040108omar.github.io/app_web/geolocation/" class="btn-evidencias" id="btnModalTema2">Ver evidencias</a>
+    </div>
+  </div>
+
+
+
+ <!-- <div class="accordion-card fade-up">
+    <button class="accordion-btn">
+      2. saber hacer
+      <span class="icon">+</span>
+    </button>
+
+    <div class="accordion-content">
+      <p>
+        
+      </p>
+
+      <a href="#" class="btn-evidencias" id="btnModalTema2">Ver evidencias</a>
+    </div>
+  </div>
+
+  <div class="modal" id="modalTema2">
+    <div class="modal-contenido">
+      <span class="btn-cerrar" id="cerrarModalTema2">&times;</span>
+      <h2>Evidencias - [Nombre del Tema]</h2>
+
+      <div class="modal-tema">
+        <h3>Sección 1</h3>
+        <div class="card-container">
+          <div class="info-card">
+            <h4>Título</h4>
+            <p>Contenido aquí...</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<br>
+<br>
+<br> -->
+
+</main>
+
+<!-- ===== SCRIPT ===== -->
+<script src="../js/u2.js"></script>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2026 Portafolio de Evidencias</p>
+    <p>Aplicaciones Web</p>
+    <p>5 DSM B</p>
+    <p>Diego Omar Batres Camacho | Erick Everardo Garza Rodríguez</p>
+  </div>
+</footer>
+
+</body>
+</html>

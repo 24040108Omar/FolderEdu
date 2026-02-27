@@ -1,0 +1,326 @@
+:root{
+  /* Paleta fuerte en azules */
+  --blue-dark: #0b1c2d;
+  --blue-main: #0f2a44;
+  --blue-accent: #1d4ed8;
+  --blue-soft: #60a5fa;
+  --blue-line: #1e3a5f;
+
+  --text-main: #ffffff;
+  --text-muted: #c7d2fe;
+
+  --radius: 16px;
+}
+
+*{ box-sizing: border-box; }
+
+body{
+  margin: 0;
+  font-family: "Nunito", system-ui, sans-serif;
+  background: var(--blue-dark);
+  color: var(--text-main);
+}
+
+/* ================= CONTENEDOR ================= */
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 40px 20px;
+  flex: 1;
+}
+
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: linear-gradient(180deg, var(--blue-main), #0c233a);
+  border-bottom: 1px solid var(--blue-line);
+}
+
+.nav{
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Marca / info académica */
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand__logo{
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.08);
+  border: 1px dashed rgba(255,255,255,0.25);
+  /* aquí irá el logo después */
+}
+
+.brand__title{
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.brand__meta{
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.2;
+}
+
+/* Links derecha */
+.nav__links{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav__link{
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 14px;
+  border-radius: 999px;
+  transition: background 0.25s ease;
+}
+
+.nav__link:hover{
+  background: rgba(255,255,255,0.12);
+}
+
+/* Botón contacto (puede ser <button> o <a>) */
+.nav__btn{
+  background: var(--blue-accent);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: none; /* por si es <a> */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.nav__btn:hover{
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+/* Botón activo (contacto.html) */
+.nav__btn--active{
+  outline: 2px solid rgba(255,255,255,0.35);
+  outline-offset: 2px;
+}
+
+/* Responsive navbar */
+@media (max-width: 720px){
+  .brand__meta{ display: none; }
+}
+
+/* ================= TITULOS ================= */
+h1,h2,h3{
+  letter-spacing: 0.4px;
+}
+
+p{
+  line-height: 1.7;
+}
+
+/* ================= ANIMACION ENTRADA ================= */
+.fade-up{
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.7s ease forwards;
+}
+
+@keyframes fadeUp{
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= ACCORDION ================= */
+.accordion-card{
+  background: rgba(255,255,255,0.05);
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.1);
+  overflow: hidden;
+  margin-bottom: 14px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.accordion-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+.accordion-btn{
+  width: 100%;
+  background: none;
+  border: none;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-btn:hover{
+  background: rgba(255,255,255,0.08);
+}
+
+.icon{
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-card.active .icon{
+  transform: rotate(45deg);
+}
+
+.accordion-content{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 20px;
+  color: #d1d5db;
+}
+
+.accordion-content::before{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--blue-soft);
+  border-radius: 999px;
+  margin: 15px 0;
+}
+
+.accordion-content p{
+  margin: 15px 0;
+}
+
+/* ================= BADGE ================= */
+.unit-badge{
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(96,165,250,0.15);
+  color: var(--blue-soft);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media(max-width:720px){
+  .brand__meta{ display:none; }
+}
+/* Estilos base de la página */
+        .unidad-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tema {
+            background-color: #2c3e50;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        /* Botón de ver evidencias */
+        .btn-evidencias {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-evidencias:hover {
+            background-color: #2980b9;
+        }
+
+        /* Estilos del modal */
+        .modal {
+            display: none; /* Oculto por defecto */
+            position: fixed; /* Fijo en pantalla */
+            z-index: 1000; /* Encima de todo */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7); /* Fondo oscuro semitransparente */
+            overflow: auto; /* Habilita scroll si es necesario */
+            padding: 20px;
+        }
+
+        .modal-contenido {
+            background-color: #2c3e50;
+            margin: 5% auto; /* Centrado vertical y horizontal */
+            padding: 25px;
+            border-radius: 8px;
+            max-width: 1100px;
+            position: relative;
+        }
+
+        /* Botón cerrar modal */
+        .btn-cerrar {
+            color: #ccc;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-cerrar:hover {
+            color: #fff;
+        }
+
+        .modal-tema {
+            margin: 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #34495e;
+        }
+
+        h3 {
+            color: #3498db;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+/* =======================
+     FOOTER (index + contacto)
+     ======================= */
+     .footer{
+      margin-top: 80px;
+      padding: 30px 20px;
+      border-top: 1px solid var(--blue-line);
+      text-align: center;
+      color: var(--text-muted);
+    }
+    

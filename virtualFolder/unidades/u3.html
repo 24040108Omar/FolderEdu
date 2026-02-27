@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unidad 3</title>
+  <link rel="stylesheet" href="../css/unidad2.css">
+  <link rel="stylesheet" href="../css/unidad3.css">
+ 
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#top">
+        <div class="brand__text">
+          <div class="brand__title">Portafolio de Evidencias</div>
+          <div class="brand__meta">Diego Omar Batres Camacho / Erick Everardo Garza Rodríguez</div>
+          <div class="brand__meta">5 DSM B — Desarrollo Web Orientado a Servicios</div>
+        </div>
+      </a>
+      <div class="nav__links">
+        <a class="nav__link" href="../index.html">Inicio</a>
+        <a class="nav__btn" href="../contacto.html">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-transition container">
+
+    <h2 class="fade-up">
+      Contenido de la tercera unidad
+      <span class="unit-badge">Unidad 3</span>
+    </h2>
+
+    <p class="fade-up">
+      Desarrollo de una Interfaz de Programación de Aplicaciones (API).
+    </p>
+
+    <!-- ════════════════════════════════════════════════
+         ACORDEÓN — SABER
+         ════════════════════════════════════════════════ -->
+    <div class="accordion-card fade-up">
+      <button class="accordion-btn">
+        1. Saber
+        <span class="icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>
+          • Identificar Frameworks en el Desarrollo de Aplicaciones Orientadas a Servicios.<br>
+          • Identificar el Proceso de Desarrollo de Programación de Aplicaciones (API).
+        </p>
+        <a href="#" class="btn-evidencias" id="btnModalTema1">Ver evidencias</a>
+      </div>
+    </div>
+
+    <!-- ════════════ MODAL — TODO EL SABER ════════════ -->
+    <div class="modal" id="modalTema1">
+      <div class="modal-contenido">
+        <span class="btn-cerrar" id="cerrarModalTema1">&times;</span>
+        <h2>📚 Saber — Unidad 3</h2>
+
+        <!-- ══ SECCIÓN 1: FRAMEWORKS ══ -->
+        <p class="modal-section-label">🚀 1. Frameworks en Aplicaciones Orientadas a Servicios</p>
+
+        <div class="modal-tema">
+          <div class="tema-header tema-fw">
+            <div class="icono-grande">🏗️</div>
+            <div>
+              <h3>Aplicaciones Orientadas a Servicios</h3>
+              <p class="tema-subtitle">
+                Una aplicación orientada a servicios se basa en el modelo <strong>SOA</strong>
+                (Arquitectura Orientada a Servicios), donde las funcionalidades del sistema se dividen
+                en servicios independientes que se comunican mediante APIs. También se relaciona con
+                la arquitectura de <strong>microservicios</strong>, donde cada servicio puede
+                desarrollarse e implementarse de forma independiente.
+              </p>
+            </div>
+          </div>
+
+          <div class="definicion-principal">
+            <div class="definicion-contenido">
+              <h4>¿Qué es un Framework?</h4>
+              <p>
+                Un <strong>framework</strong> es un conjunto de herramientas, bibliotecas y reglas
+                que facilitan el desarrollo de aplicaciones. Provee una estructura base para que los
+                desarrolladores se enfoquen en la lógica del negocio sin empezar desde cero,
+                acelerando el trabajo y garantizando buenas prácticas.
+              </p>
+            </div>
+            <div class="definicion-imagen">
+              <div class="imagen-container">
+                <div class="imagen-placeholder-new">
+                  <img src="../image/gif/framework.gif" alt="Frameworks" class="imagen-modal">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="caracteristicas-grid">
+            <div class="caracteristica-item item-fw">
+              <span class="car-icono">🔌</span>
+              <h5>Soporte REST / SOAP</h5>
+              <p>Manejo nativo de peticiones HTTP y servicios web</p>
+            </div>
+            <div class="caracteristica-item item-fw">
+              <span class="car-icono">🔒</span>
+              <h5>Seguridad</h5>
+              <p>Autenticación, autorización y protección integradas</p>
+            </div>
+            <div class="caracteristica-item item-fw">
+              <span class="car-icono">📦</span>
+              <h5>Modularidad</h5>
+              <p>Organización en módulos o componentes reutilizables</p>
+            </div>
+            <div class="caracteristica-item item-fw">
+              <span class="car-icono">📈</span>
+              <h5>Escalabilidad</h5>
+              <p>Crece junto con las necesidades del proyecto</p>
+            </div>
+          </div>
+
+          <div class="ejemplos-destacados">
+            <h4>✅ Características comunes</h4>
+            <div class="ejemplos-tags">
+              <span class="tag-ejemplo tag-fw">APIs REST / SOAP</span>
+              <span class="tag-ejemplo tag-fw">HTTP Methods</span>
+              <span class="tag-ejemplo tag-fw">Integración BD</span>
+              <span class="tag-ejemplo tag-fw">Autenticación JWT</span>
+              <span class="tag-ejemplo tag-fw">Microservicios</span>
+              <span class="tag-ejemplo tag-fw">Escalabilidad</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="modal-tema">
+          <div class="tema-header tema-fw">
+            <div class="icono-grande">⚙️</div>
+            <div>
+              <h3>Frameworks Backend (Servidor)</h3>
+              <p class="tema-subtitle">
+                Se utilizan para construir la lógica del servidor, gestionar bases de datos y exponer APIs.
+                Son la columna vertebral de las aplicaciones orientadas a servicios.
+              </p>
+            </div>
+          </div>
+
+          <div class="framework-grid">
+            <div class="fw-card fw-card--backend">
+              <span class="fw-icon">☕</span>
+              <h5>Spring Boot</h5>
+              <p>Framework de Java para crear APIs REST y microservicios con configuración mínima.</p>
+              <div class="fw-badge-row">
+                <span class="fw-badge">Fácil config.</span>
+                <span class="fw-badge">Seguridad</span>
+                <span class="fw-badge">BD integrada</span>
+              </div>
+            </div>
+            <div class="fw-card fw-card--backend">
+              <span class="fw-icon">🟩</span>
+              <h5>Express.js</h5>
+              <p>Framework ligero para Node.js. Ideal para APIs rápidas, minimalista y flexible.</p>
+              <div class="fw-badge-row">
+                <span class="fw-badge">Ligero</span>
+                <span class="fw-badge">Node.js</span>
+                <span class="fw-badge">REST</span>
+              </div>
+            </div>
+            <div class="fw-card fw-card--backend">
+              <span class="fw-icon">🐍</span>
+              <h5>Django</h5>
+              <p>Framework de Python con herramientas listas para usar. Desarrollo rápido y seguro.</p>
+              <div class="fw-badge-row">
+                <span class="fw-badge">Python</span>
+                <span class="fw-badge">ORM</span>
+                <span class="fw-badge">Rápido</span>
+              </div>
+            </div>
+            <div class="fw-card fw-card--backend">
+              <span class="fw-icon">🪟</span>
+              <h5>.NET</h5>
+              <p>Plataforma de Microsoft para APIs de alto rendimiento con seguridad robusta.</p>
+              <div class="fw-badge-row">
+                <span class="fw-badge">Alto rend.</span>
+                <span class="fw-badge">Multi-lang</span>
+                <span class="fw-badge">Microsoft</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ejemplos-destacados">
+            <h4>⚙️ Tecnologías Backend Populares</h4>
+            <div class="ejemplos-tags">
+              <span class="tag-ejemplo tag-fw">Spring Boot</span>
+              <span class="tag-ejemplo tag-fw">Express.js</span>
+              <span class="tag-ejemplo tag-fw">Django</span>
+              <span class="tag-ejemplo tag-fw">.NET</span>
+              <span class="tag-ejemplo tag-fw">Laravel</span>
+              <span class="tag-ejemplo tag-fw">FastAPI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="modal-tema">
+          <div class="tema-header tema-purple">
+            <div class="icono-grande">🎨</div>
+            <div>
+              <h3>Frameworks Frontend (Cliente)</h3>
+              <p class="tema-subtitle">
+                Se utilizan para construir la interfaz de usuario que consume las APIs.
+                Permiten crear aplicaciones web dinámicas, rápidas y bien organizadas.
+              </p>
+            </div>
+          </div>
+
+          <div class="framework-grid">
+            <div class="fw-card fw-card--frontend">
+              <span class="fw-icon">🅰️</span>
+              <h5>Angular</h5>
+              <p>Framework para apps web dinámicas con arquitectura modular. Ideal para proyectos empresariales.</p>
+              <div class="fw-badge-row">
+                <span class="fw-badge">TypeScript</span>
+                <span class="fw-badge">Empresarial</span>
+                <span class="fw-badge">Modular</span>
+              </div>
+            </div>
+            <div class="fw-card fw-card--frontend">
+              <span class="fw-icon">⚛️</span>
+              <h5>React</h5>
+              <p>Biblioteca para construir interfaces con componentes reutilizables y alta velocidad.</p>
+              <div class="fw-badge-row">
+                <span class="fw-badge">Componentes</span>
+                <span class="fw-badge">Veloz</span>
+                <span class="fw-badge">Facebook</span>
+              </div>
+            </div>
+            <div class="fw-card fw-card--frontend">
+              <span class="fw-icon">💚</span>
+              <h5>Vue.js</h5>
+              <p>Framework progresivo para interfaces web. Fácil de aprender, ligero y flexible.</p>
+              <div class="fw-badge-row">
+                <span class="fw-badge">Fácil</span>
+                <span class="fw-badge">Ligero</span>
+                <span class="fw-badge">Progresivo</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ejemplos-destacados">
+            <h4>🎨 Frameworks Frontend Populares</h4>
+            <div class="ejemplos-tags">
+              <span class="tag-ejemplo tag-purple">Angular</span>
+              <span class="tag-ejemplo tag-purple">React</span>
+              <span class="tag-ejemplo tag-purple">Vue.js</span>
+              <span class="tag-ejemplo tag-purple">Svelte</span>
+              <span class="tag-ejemplo tag-purple">Next.js</span>
+              <span class="tag-ejemplo tag-purple">Nuxt.js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ══ DIVISOR ══ -->
+        <hr class="modal-section-divider">
+        <p class="modal-section-label">🔗 2. Proceso de Desarrollo de una API</p>
+
+        <!-- Qué es una API -->
+        <div class="modal-tema">
+          <div class="tema-header tema-api">
+            <div class="icono-grande">🔌</div>
+            <div>
+              <h3>¿Qué es una API?</h3>
+              <p class="tema-subtitle">
+                Una <strong>API</strong> (Interfaz de Programación de Aplicaciones) es un conjunto de
+                reglas y protocolos que permite que diferentes aplicaciones se comuniquen entre sí.
+                Actúa como intermediario: cuando una app del clima consulta datos de un servidor externo,
+                lo hace a través de una API.
+              </p>
+            </div>
+          </div>
+
+          <div class="definicion-principal">
+            <div class="definicion-contenido">
+              <h4>Definición</h4>
+              <p>
+                Una API define cómo deben interactuar los componentes de software.
+                Expone funcionalidades de un sistema para que otras aplicaciones puedan usarlas
+                sin conocer su implementación interna, facilitando la integración entre sistemas distintos.
+              </p>
+            </div>
+            <div class="definicion-imagen">
+              <div class="imagen-container">
+                <div class="imagen-placeholder-new">
+                  <img src="../image/gif/apis.gif" alt="API" class="imagen-modal">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="caracteristicas-grid">
+            <div class="caracteristica-item item-api">
+              <span class="car-icono">📄</span>
+              <h5>Clara y Documentada</h5>
+              <p>Fácil de entender y usar por otros desarrolladores</p>
+            </div>
+            <div class="caracteristica-item item-api">
+              <span class="car-icono">🔐</span>
+              <h5>Segura</h5>
+              <p>Autenticación, autorización y cifrado HTTPS</p>
+            </div>
+            <div class="caracteristica-item item-api">
+              <span class="car-icono">⚡</span>
+              <h5>Rápida y Eficiente</h5>
+              <p>Respuestas rápidas y uso óptimo de recursos</p>
+            </div>
+            <div class="caracteristica-item item-api">
+              <span class="car-icono">📈</span>
+              <h5>Escalable</h5>
+              <p>Soporta aumento de usuarios y peticiones</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 Pasos -->
+        <div class="modal-tema">
+          <div class="tema-header tema-api">
+            <div class="icono-grande">🔄</div>
+            <div>
+              <h3>Proceso de Desarrollo (7 Etapas)</h3>
+              <p class="tema-subtitle">
+                El desarrollo de una API sigue un proceso estructurado que asegura calidad,
+                seguridad y facilidad de uso para los consumidores de la interfaz.
+              </p>
+            </div>
+          </div>
+
+          <div class="proceso-steps">
+            <div class="step-card">
+              <div class="step-num">1</div>
+              <h5>Análisis de Requerimientos</h5>
+              <p>Definir qué problema resolverá la API, quién la usará y qué datos manejará.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">2</div>
+              <h5>Diseño de la API</h5>
+              <p>Definir rutas (endpoints), tipo de API (REST / SOAP / GraphQL) y formato de datos (JSON).</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">3</div>
+              <h5>Desarrollo</h5>
+              <p>Programar la API, conectar con la base de datos e implementar la lógica del negocio.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">4</div>
+              <h5>Pruebas</h5>
+              <p>Pruebas unitarias e integración con herramientas como Postman y Swagger.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">5</div>
+              <h5>Seguridad</h5>
+              <p>Autenticación JWT / OAuth, protección contra SQL injection, XSS y uso de HTTPS.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">6</div>
+              <h5>Documentación</h5>
+              <p>Explicar endpoints, ejemplos de petición/respuesta y códigos de error.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">7</div>
+              <h5>Deploy</h5>
+              <p>Subir la API a servidores en la nube: AWS, Google Cloud o Microsoft Azure.</p>
+            </div>
+          </div>
+
+          <!-- Endpoints -->
+          <div class="definicion-principal" style="margin-bottom:32px;">
+            <div class="definicion-contenido">
+              <h4>Ejemplos de Endpoints</h4>
+              <p>Los endpoints definen las rutas accesibles en la API usando métodos HTTP:</p>
+              <br>
+              <div style="display:flex; flex-direction:column; gap:10px; margin-top:8px;">
+                <span style="font-family:monospace; background:rgba(96,165,250,0.12); border:1px solid rgba(96,165,250,0.3); padding:8px 14px; border-radius:8px; color:#93c5fd; font-size:0.95em;">GET &nbsp;&nbsp;/usuarios &nbsp;&nbsp;→ Obtener lista</span>
+                <span style="font-family:monospace; background:rgba(52,211,153,0.12); border:1px solid rgba(52,211,153,0.3); padding:8px 14px; border-radius:8px; color:#6ee7b7; font-size:0.95em;">POST &nbsp;/productos &nbsp;→ Crear producto</span>
+                <span style="font-family:monospace; background:rgba(251,146,60,0.12); border:1px solid rgba(251,146,60,0.3); padding:8px 14px; border-radius:8px; color:#fcd34d; font-size:0.95em;">PUT &nbsp;&nbsp;/usuarios/:id → Actualizar</span>
+                <span style="font-family:monospace; background:rgba(244,63,94,0.12); border:1px solid rgba(244,63,94,0.3); padding:8px 14px; border-radius:8px; color:#fca5a5; font-size:0.95em;">DELETE /usuarios/:id → Eliminar</span>
+              </div>
+            </div>
+            <div class="definicion-imagen">
+              <div class="imagen-container">
+                <div class="imagen-placeholder-new">
+                <img src="../image/gif/endpoint.gif" alt="Endpoints" class="imagen-modal">
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Herramientas -->
+          <div class="ejemplos-destacados">
+            <h4>🛠️ Herramientas del Proceso</h4>
+            <div class="ejemplos-tags">
+              <span class="tag-ejemplo tag-api">Postman</span>
+              <span class="tag-ejemplo tag-api">Swagger</span>
+              <span class="tag-ejemplo tag-api">JWT</span>
+              <span class="tag-ejemplo tag-api">OAuth</span>
+              <span class="tag-ejemplo tag-api">AWS</span>
+              <span class="tag-ejemplo tag-api">Google Cloud</span>
+              <span class="tag-ejemplo tag-api">Azure</span>
+              <span class="tag-ejemplo tag-api">HTTPS / SSL</span>
+            </div>
+          </div>
+
+          <!-- Características de una buena API -->
+          <h3 style="color:var(--blue-soft); margin:30px 0 18px;">📊 Características de una Buena API</h3>
+          <div class="api-features">
+            <div class="api-feat">
+              <span class="api-feat-icon">📄</span>
+              <h6>Clara y Documentada</h6>
+              <p>Explica cada endpoint con ejemplos reales</p>
+            </div>
+            <div class="api-feat">
+              <span class="api-feat-icon">🔐</span>
+              <h6>Segura</h6>
+              <p>Usa JWT, OAuth y HTTPS siempre</p>
+            </div>
+            <div class="api-feat">
+              <span class="api-feat-icon">📈</span>
+              <h6>Escalable</h6>
+              <p>Soporta crecimiento de usuarios sin caer</p>
+            </div>
+            <div class="api-feat">
+              <span class="api-feat-icon">🧩</span>
+              <h6>Fácil de Usar</h6>
+              <p>Convenciones claras y respuestas consistentes</p>
+            </div>
+            <div class="api-feat">
+              <span class="api-feat-icon">⚡</span>
+              <h6>Rápida</h6>
+              <p>Tiempos de respuesta bajos y eficientes</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- FIN MODAL SABER -->
+
+    <!-- ════════════════════════════════════════════════
+         SABER HACER #1
+         ════════════════════════════════════════════════ -->
+    <div class="accordion-card fade-up">
+      <button class="accordion-btn">
+        2. Saber Hacer #1
+        <span class="icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>Evidencias prácticas de la unidad.</p>
+        <a href="#" class="btn-evidencias">Ver evidencias</a>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════
+         SABER HACER #2
+         ════════════════════════════════════════════════ -->
+    <div class="accordion-card fade-up">
+      <button class="accordion-btn">
+        3. Saber Hacer #2
+        <span class="icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>Evidencias prácticas de la unidad.</p>
+        <a href="#" class="btn-evidencias">Ver evidencias</a>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="../js/u2.js"></script>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2026 Portafolio de Evidencias</p>
+      <p>Aplicaciones Web</p>
+      <p>5 DSM B</p>
+      <p>Diego Omar Batres Camacho | Erick Everardo Garza Rodríguez</p>
+    </div>
+  </footer>
+
+</body>
+</html>
